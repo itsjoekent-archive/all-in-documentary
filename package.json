@@ -2,7 +2,8 @@
   "scripts": {
     "start": "npm-run-all --parallel start:*",
     "start:webpack": "webpack --watch",
-    "start:serve": "serve dist"
+    "start:serve": "serve dist",
+    "build": "PRODUCTION=true webpack"
   },
   "dependencies": {
     "autoprefixer": "^9.8.6",

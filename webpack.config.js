@@ -5,7 +5,7 @@ const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: {
-    main: './css/main.css',
+    main: './css/main.scss',
     reset: './css/reset.css',
   },
   output: {
@@ -15,7 +15,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.css$/,
+        test: /\.(scss|css)$/,
         use: [
           MiniCssExtractPlugin.loader,
           'css-loader',
@@ -29,7 +29,7 @@ module.exports = {
             loader: 'file-loader',
           },
         ],
-      },      
+      },
       // {
       //   test: /\.m?js$/,
       //   exclude: /(node_modules|bower_components)/,
