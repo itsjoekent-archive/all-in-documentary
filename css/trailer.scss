@@ -1,0 +1,76 @@
+.video-overlay {
+  display: none;
+
+  &.--open {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgba(0, 0, 0, 0.9);
+
+    position: absolute;
+    z-index: 200;
+    top: 0;
+    left: 0;
+
+    @media (max-width: 600px) {
+      .mobile-overlay {
+        display: block;
+      }
+    }
+
+    @media (min-width: 600px) and (max-width: 1024px) {
+      .tablet-overlay {
+        display: block;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .desktop-overlay {
+        display: block;
+      }
+    }
+  }
+
+  .mobile-overlay, .tablet-overlay, .desktop-overlay {
+    display: none;
+  }
+
+  button {
+    display: block;
+
+    font-family: $ui-font;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $white;
+
+    cursor: pointer;
+
+    border: none;
+    background: none;
+
+    padding: 0;
+    margin: 0;
+
+    position: absolute;
+    top: 24px;
+    left: 18px;
+
+    &:hover {
+      &:after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: $white;
+        position: absolute;
+        top: calc(100% + 8px);
+        left: 0;
+      }
+    }
+  }
+}

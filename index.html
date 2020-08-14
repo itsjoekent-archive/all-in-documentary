@@ -28,6 +28,12 @@
     </script>
   </head>
   <body>
+    <div id="trailer" class="video-overlay">
+      <button id="close-trailer">← back to home</button>
+      <iframe class="mobile-overlay" width="336" height="189" src="https://www.youtube.com/embed/ceyC1ICpuqA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe class="tablet-overlay" width="560" height="315" src="https://www.youtube.com/embed/ceyC1ICpuqA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe class="desktop-overlay" width="960" height="650" src="https://www.youtube.com/embed/ceyC1ICpuqA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
     <nav class="navigation">
       <div class="navigation-inner">
         <a href="/" aria-label="Back home">
@@ -54,7 +60,7 @@
           <div class="hero-trailer">
             <div class="trailer-block">
               <h3>Watch the film trailer:</h3>
-              <button aria-label="Open film trailer">
+              <button id="open-trailer" aria-label="Open film trailer">
                 <img src="/static/trailer-cover.png" alt="Film trailer cover featuring Stacey Abrams" />
               </button>
             </div>

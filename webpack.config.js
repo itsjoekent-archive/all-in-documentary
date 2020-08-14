@@ -2,11 +2,11 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   entry: {
-    main: './css/main.scss',
-    reset: './css/reset.css',
+    main: './js/index.js',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -36,16 +36,16 @@ module.exports = {
           'file-loader',
         ],
       },
-      // {
-      //   test: /\.m?js$/,
-      //   exclude: /(node_modules|bower_components)/,
-      //   use: {
-      //     loader: 'babel-loader',
-      //     options: {
-      //       presets: ['@babel/preset-env'],
-      //     },
-      //   },
-      // },
+      {
+        test: /\.m?js$/,
+        exclude: /(node_modules|bower_components)/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env'],
+          },
+        },
+      },
     ],
   },
   plugins: [

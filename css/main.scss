@@ -61,8 +61,11 @@ $medium-black: #29292A;
   font-style: normal;
 }
 
+@import './reset.css';
+
 @import './hero.scss';
 @import './navigation.scss';
+@import './trailer.scss';
 
 body {
   background-color: $medium-black;
