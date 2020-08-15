@@ -1,0 +1,255 @@
+.signup {
+  min-height: 100vh;
+}
+
+.signup-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  max-width: 960px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-bottom: 48px;
+}
+
+.signup-title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  margin-bottom: 64px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 96px;
+  }
+
+  position: relative;
+
+  &:after {
+    content: '';
+    display: block;
+
+    position: absolute;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+    max-width: 770px;
+    max-height: 600px;
+
+    background: url('/static/usa.png');
+    background-position: center center;
+    background-size: cover;
+
+    @media (min-width: 768px) {
+      width: 770px;
+      height: 600px;
+    }
+  }
+}
+
+.signup-title {
+  text-align: center;
+  margin-top: 64px;
+  overflow: hidden;
+  z-index: 1;
+
+  @media (min-width: 768px) {
+    margin-top: 152px;
+  }
+
+  .signup-title--top,
+  .signup-title--middle,
+  .signup-title--bottom {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    -webkit-text-fill-color: transparent;
+    background-image: url('/static/texture-2.png');
+    -webkit-background-clip: text;
+  }
+
+  .signup-title--top {
+    font-family: $decorative-font;
+    font-size: 48px;
+    letter-spacing: 2px;
+    transform: scale(1.25, 1);
+    margin-bottom: 6px;
+
+    @media (min-width: 768px) {
+      font-size: 68px;
+    }
+  }
+
+  .signup-title--middle {
+    font-family: $decorative-font;
+    font-size: 96px;
+    letter-spacing: 12px;
+    transform: scale(1, 1.25);
+    margin-bottom: 10px;
+    padding-left: 20px;
+
+    @media (min-width: 768px) {
+      font-size: 136px;
+      padding-left: 10px;
+    }
+  }
+
+  .signup-title--bottom {
+    font-family: $ui-font;
+    font-size: 28px;
+    font-weight: 900;
+    font-stretch: ultra-condensed;
+    letter-spacing: 0.25px;
+    transform: scale(0.9, 1);
+
+    @media (min-width: 768px) {
+      font-size: 42px;
+    }
+  }
+}
+
+.signup-form {
+  padding-left: 24px;
+  padding-right: 24px;
+
+  z-index: 1;
+
+  .signup-form--header {
+    width: 100%;
+    max-width: 580px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+
+    h3 {
+      font-family: $decorative-font;
+      font-size: 28px;
+      font-weight: normal;
+      line-height: 1.2;
+      color: $white;
+      text-align: center;
+
+      margin-bottom: 24px;
+    }
+
+    p {
+      font-family: $ui-font;
+      font-size: 16px;
+      font-weight: normal;
+      line-height: 1.2;
+      color: $white;
+      text-align: center;
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    max-width: 700px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    border-top: 1px solid $white;
+    border-bottom: 2px solid $white;
+  }
+
+  .field-layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  button {
+    font-family: $ui-font;
+    font-size: 24px;
+    font-weight: 900;
+    color: $medium-black;
+    text-transform: uppercase;
+
+    background: $white;
+    padding: 10px 24px;
+
+    border: 2px solid $white;
+    border-radius: 10px;
+
+    margin-top: 12px;
+    margin-bottom: 24px;
+
+    cursor: pointer;
+
+    &:hover {
+      background: none;
+      color: $white;
+    }
+  }
+
+  .signup-form-field {
+    display: flex;
+    flex-direction: column;
+
+    flex: 0 0 100%;
+
+    margin-bottom: 24px;
+
+    @media (min-width: 768px) {
+      flex: 0 0 calc(50% - 24px);
+    }
+
+    label {
+      font-family: $decorative-font;
+      font-size: 16px;
+      font-weight: normal;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      color: $white;
+
+      margin-bottom: 10px;
+    }
+
+    input {
+      font-family: $ui-font;
+      font-size: 18px;
+      font-weight: normal;
+      color: $white;
+
+      padding: 14px 16px;
+      box-sizing: border-box;
+
+      border-radius: 10px;
+      border: 1px solid $white;
+
+      background: $medium-black;
+    }
+
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }    
+  }
+
+  .signup-form-disclaimer {
+    font-family: $ui-font;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.2;
+    color: $white;
+    text-align: center;
+  }
+}
