@@ -30,23 +30,79 @@
   <body>
     <div id="trailer" class="video-overlay">
       <button id="close-trailer">← back to home</button>
-      <iframe class="mobile-overlay" width="336" height="189" src="https://www.youtube.com/embed/ceyC1ICpuqA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <iframe class="tablet-overlay" width="560" height="315" src="https://www.youtube.com/embed/ceyC1ICpuqA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <iframe class="desktop-overlay" width="960" height="650" src="https://www.youtube.com/embed/ceyC1ICpuqA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe class="mobile-overlay" width="336" height="189" src="https://www.youtube.com/embed/t6jVGswLPd8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe class="tablet-overlay" width="560" height="315" src="https://www.youtube.com/embed/t6jVGswLPd8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe class="desktop-overlay" width="960" height="650" src="https://www.youtube.com/embed/t6jVGswLPd8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-    <nav class="navigation">
+    <nav id="navigation" class="navigation">
       <div class="navigation-inner">
         <a href="/" aria-label="Back home">
           <img class="navigation-logo" src="/static/logo.png" alt="All In: The Fight for Democracy" />
         </a>
-        <button aria-label="Open mobile menu" class="navigation-hamburger">
+        <button id="toggle-navigation" aria-label="Open mobile menu" class="navigation-hamburger">
           Menu
         </button>
         <ul class="navigation-links">
-          <li><a href="/about">about the  film</a></li>
-          <li><a href="/vote">how to vote</a></li>
+          <li class="navigation-item">
+            <p>about the film</p>
+            <div class="navigation-dropdown --center">
+              <ul class="navigation-list">
+                <li><a href="">About The Film</a></li>
+                <li><a href="">Watch The Film Online</a></li>
+                <li><a href="">Find Theater Times</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="navigation-item">
+            <p>how to vote</p>
+            <div class="navigation-dropdown --center --split">
+              <ul class="navigation-list">
+                <li><a href="">Register to Vote</a></li>
+                <li><a href="">Check Registration Status</a></li>
+                <li><a href="">Get Election Reminders</a></li>
+                <li><a href="">Request a Mail-in ballot</a></li>
+              </ul>
+              <ul class="navigation-list">
+                <li><a href="">Find Your Polling Place</a></li>
+                <li><a href="">See What’s On Your Ballot</a></li>
+                <li><a href="">How To Vote In Your State</a></li>
+                <li><a href="">Know Your Rights</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="navigation-item">
+            <p>take action</p>
+            <div class="navigation-dropdown --center --split">
+              <ul class="navigation-list">
+                <li><a href="">Commit to Vote</a></li>
+                <li><a href="">Help Get Out The Vote</a></li>
+                <li><a href="">Become a Squad Captain</a></li>
+              </ul>
+              <ul class="navigation-list">
+                <li><a href="">Volunteer as a Poll Worker</a></li>
+                <li><a href="">Volunteer as a poll monitor</a></li>
+                <li><a href="">Social Media Toolkit</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="navigation-item">
+            <p>resources</p>
+            <div class="navigation-dropdown --right --split">
+              <ul class="navigation-list">
+                <li><a href="">Commit to Vote</a></li>
+                <li><a href="">Help Get Out The Vote</a></li>
+                <li><a href="">Become a Squad Captain</a></li>
+              </ul>
+              <ul class="navigation-list">
+                <li><a href="">Volunteer as a Poll Worker</a></li>
+                <li><a href="">Volunteer as a poll monitor</a></li>
+                <li><a href="">Social Media Toolkit</a></li>
+              </ul>
+            </div>
+          </li>
+          <!-- <li><a href="/vote">how to vote</a></li>
           <li><a href="#action">take action</a></li>
-          <li><a href="/resources">resources</a></li>
+          <li><a href="/resources">resources</a></li> -->
         </ul>
       </div>
     </nav>
