@@ -1,19 +1,17 @@
 .tool {
   background-color: $dark-black;
-  position: relative;
-
-  &:after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 650px;
-    height: 900px;
-    background-image: url('/static/texture-4.png');
-  }
 
   .main {
+    background-image: url('/static/texture-4.png');
+    background-size: 650px 600px;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+  }
+
+  .tool-column {
+    display: flex;
+    flex-direction: column;
+
     width: 100%;
     max-width: 960px;
     min-height: 90vh;
@@ -25,8 +23,6 @@
     padding-left: 24px;
     padding-right: 24px;
     box-sizing: border-box;
-
-    z-index: 1;
 
     @media (min-width: 768px) {
       padding-top: 160px;
@@ -48,7 +44,6 @@
     -webkit-background-clip: text;
 
     margin-bottom: 72px;
-    transform: scale(1.25, 1);
 
     @media (min-width: 768px) {
       font-size: 52px;

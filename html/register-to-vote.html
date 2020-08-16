@@ -6,13 +6,15 @@
   <body class="tool">
     <%= require('html-loader!./nav.html') %>
     <main class="main">
-      <h1 class="tool-title">Reigster To Vote</h1>
-      <script type="text/javascript"  src="https://register.rockthevote.com/assets/rtv-iframe.js"></script>
-      <script type="text/javascript">
-        RtvIframe.init({
-          partner: 38694
-        });
-      </script>
+      <div class="tool-column">
+        <h1 class="tool-title">Reigster To Vote</h1>
+        <script type="text/javascript"  src="https://register.rockthevote.com/assets/rtv-iframe.js"></script>
+        <script type="text/javascript">
+          RtvIframe.init({
+            partner: 38694
+          });
+        </script>
+      </div>
     </main>
     <%= require('html-loader!./footer.html') %>
   </body>

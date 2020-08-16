@@ -7,6 +7,8 @@ $white: #FFFFFF;
 $medium-black: #29292A;
 $dark-black: #000000;
 $blue: #266093;
+$dark-blue: #194368;
+$cream: #F1EFE1;
 
 @import url('https://fast.fonts.net/lt/1.css?apiType=css&c=68c8fbf8-be1e-49a0-9397-e71d339cdd92&fontids=5745183');
 @font-face{
@@ -65,6 +67,7 @@ $blue: #266093;
 
 @import './reset.css';
 
+@import './actions.scss';
 @import './hero.scss';
 @import './home.scss';
 @import './footer.scss';
