@@ -52,7 +52,7 @@
     a {
       color: $white;
 
-      &:hover {
+      &:not(.--disabled):hover {
         color: #c6c6c7;
       }
     }
@@ -239,7 +239,12 @@
       color: $medium-black;
       cursor: pointer;
 
-      &:hover {
+      &.--disabled {
+        color: #adadad;
+        cursor: not-allowed;
+      }
+
+      &:not(.--disabled):hover {
         color: $blue;
       }
     }

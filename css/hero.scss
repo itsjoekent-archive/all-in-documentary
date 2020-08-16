@@ -148,7 +148,7 @@
 
       h3 {
         font-family: $decorative-font;
-        font-size: 14px;
+        font-size: 18px;
         font-weight: normal;
         line-height: 1;
         letter-spacing: 0.04em;
@@ -156,11 +156,11 @@
         text-transform: uppercase;
         position: absolute;
         margin-right: 0;
-        top: -22px;
+        top: -28px;
 
         @media (min-width: 1024px) {
-          top: -32px;
-          font-size: 18px;
+          top: -42px;
+          font-size: 28px;
         }
       }
 

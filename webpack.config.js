@@ -80,6 +80,10 @@ module.exports = {
       template: 'html/voting-squad-captain.html',
       filename: 'voting-squad-captain.html',
     }),
+    new HtmlWebpackPlugin({
+      template: 'html/mail-in-ballot.html',
+      filename: 'mail-in-ballot.html',
+    }),
     new CopyPlugin({
       patterns: [
         { from: 'static', to: 'static' },
