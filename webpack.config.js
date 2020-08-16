@@ -53,7 +53,32 @@ module.exports = {
       filename: '[name].css',
     }),
     new HtmlWebpackPlugin({
-      template: 'index.html',
+      template: 'html/index.html',
+      filename: 'index.html',
+    }),
+    new HtmlWebpackPlugin({
+      template: 'html/register-to-vote.html',
+      filename: 'register-to-vote.html',
+    }),
+    new HtmlWebpackPlugin({
+      template: 'html/registration-status.html',
+      filename: 'registration-status.html',
+    }),
+    new HtmlWebpackPlugin({
+      template: 'html/ballot-preview.html',
+      filename: 'ballot-preview.html',
+    }),
+    new HtmlWebpackPlugin({
+      template: 'html/election-reminders.html',
+      filename: 'election-reminders.html',
+    }),
+    new HtmlWebpackPlugin({
+      template: 'html/commit-to-vote.html',
+      filename: 'commit-to-vote.html',
+    }),
+    new HtmlWebpackPlugin({
+      template: 'html/voting-squad-captain.html',
+      filename: 'voting-squad-captain.html',
     }),
     new CopyPlugin({
       patterns: [

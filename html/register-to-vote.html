@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%= require('html-loader!./head-tags.html') %>
+  </head>
+  <body class="tool">
+    <%= require('html-loader!./nav.html') %>
+    <main class="main">
+      <h1 class="tool-title">Reigster To Vote</h1>
+      <script type="text/javascript"  src="https://register.rockthevote.com/assets/rtv-iframe.js"></script>
+      <script type="text/javascript">
+        RtvIframe.init({
+          partner: 38694
+        });
+      </script>
+    </main>
+    <%= require('html-loader!./footer.html') %>
+  </body>
+</html>

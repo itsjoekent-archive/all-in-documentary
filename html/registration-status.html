@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%= require('html-loader!./head-tags.html') %>
+  </head>
+  <body class="tool">
+    <%= require('html-loader!./nav.html') %>
+    <main class="main">
+      <h1 class="tool-title">Check Your Voter Registration Status</h1>
+      <iframe id="myIframe" src="https://am-i-registered-to-vote.org/allin/" width="100%" height="1200" scrolling="no"></iframe>
+    </main>
+    <%= require('html-loader!./footer.html') %>
+  </body>
+</html>

@@ -5,6 +5,7 @@ $ui-font: 'MuseoSans', sans-serif;
 
 $white: #FFFFFF;
 $medium-black: #29292A;
+$dark-black: #000000;
 $blue: #266093;
 
 @import url('https://fast.fonts.net/lt/1.css?apiType=css&c=68c8fbf8-be1e-49a0-9397-e71d339cdd92&fontids=5745183');
@@ -65,18 +66,10 @@ $blue: #266093;
 @import './reset.css';
 
 @import './hero.scss';
+@import './home.scss';
 @import './footer.scss';
 @import './navigation.scss';
 @import './partners.scss';
 @import './signup.scss';
+@import './tool.scss';
 @import './trailer.scss';
-
-body {
-  background-color: $medium-black;
-}
-
-.main {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}

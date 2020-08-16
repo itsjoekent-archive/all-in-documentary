@@ -1,106 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>All In: The Fight for Democracy</title>
-
-    <meta charset="utf-8" />
-    <!-- TODO: <link rel="shortcut icon" href="/favicon.ico" /> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#20486D" />
-    <meta property="og:image" content="/static/meta.png" />
-    <meta property="og:description" content="Add your name to join Stacey Abrams and the #AllInForVoting team." />
-    <meta property="twitter:card" content="summary" />
-    <meta property="twitter:site" content="@allinthefilm" />
-    <meta property="twitter:title" content="All In: The Fight for Democracy" />
-    <meta property="twitter:description" content="Add your name to join Stacey Abrams and the #AllInForVoting team." />
-    <meta property="twitter:image" content="/static/meta.png" />
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175161009-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-175161009-1');
-    </script>
+    <%= require('html-loader!./head-tags.html') %>
   </head>
-  <body>
+  <body class="homepage">
     <div id="trailer" class="video-overlay">
       <button id="close-trailer">← back to home</button>
       <iframe class="mobile-overlay" width="336" height="189" src="https://www.youtube.com/embed/t6jVGswLPd8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <iframe class="tablet-overlay" width="560" height="315" src="https://www.youtube.com/embed/t6jVGswLPd8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <iframe class="desktop-overlay" width="960" height="650" src="https://www.youtube.com/embed/t6jVGswLPd8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-    <nav id="navigation" class="navigation">
-      <div class="navigation-inner">
-        <a href="/" aria-label="Back home">
-          <img class="navigation-logo" src="/static/logo.png" alt="All In: The Fight for Democracy" />
-        </a>
-        <button id="toggle-navigation" aria-label="Open mobile menu" class="navigation-hamburger">
-          Menu
-        </button>
-        <ul class="navigation-links">
-          <li class="navigation-item">
-            <p>about the film</p>
-            <div class="navigation-dropdown --center">
-              <ul class="navigation-list">
-                <li><a href="">About The Film</a></li>
-                <li><a href="">Watch The Film Online</a></li>
-                <li><a href="">Find Theater Times</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="navigation-item">
-            <p>how to vote</p>
-            <div class="navigation-dropdown --center --split">
-              <ul class="navigation-list">
-                <li><a href="">Register to Vote</a></li>
-                <li><a href="">Check Registration Status</a></li>
-                <li><a href="">Get Election Reminders</a></li>
-                <li><a href="">Request a Mail-in ballot</a></li>
-              </ul>
-              <ul class="navigation-list">
-                <li><a href="">Find Your Polling Place</a></li>
-                <li><a href="">See What’s On Your Ballot</a></li>
-                <li><a href="">How To Vote In Your State</a></li>
-                <li><a href="">Know Your Rights</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="navigation-item">
-            <p>take action</p>
-            <div class="navigation-dropdown --center --split">
-              <ul class="navigation-list">
-                <li><a href="">Commit to Vote</a></li>
-                <li><a href="">Help Get Out The Vote</a></li>
-                <li><a href="">Become a Squad Captain</a></li>
-              </ul>
-              <ul class="navigation-list">
-                <li><a href="">Volunteer as a Poll Worker</a></li>
-                <li><a href="">Volunteer as a poll monitor</a></li>
-                <li><a href="">Social Media Toolkit</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="navigation-item">
-            <p>resources</p>
-            <div class="navigation-dropdown --right --split">
-              <ul class="navigation-list">
-                <li><a href="">Commit to Vote</a></li>
-                <li><a href="">Help Get Out The Vote</a></li>
-                <li><a href="">Become a Squad Captain</a></li>
-              </ul>
-              <ul class="navigation-list">
-                <li><a href="">Volunteer as a Poll Worker</a></li>
-                <li><a href="">Volunteer as a poll monitor</a></li>
-                <li><a href="">Social Media Toolkit</a></li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <%= require('html-loader!./nav.html') %>
     <main class="main">
       <section class="hero">
         <div class="hero-inner">
@@ -225,26 +135,6 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
-      <div class="footer-column">
-        <div class="footer-top">
-          <div class="footer-links">
-            <a href="" class="footer-link">About</a>
-            <a href="" class="footer-link">Press</a>
-          </div>
-          <div class="footer-social">
-            <p>Follow us:</p>
-            <a aria-label="Follow on Instagram" href=""><img src="/static/instagram.png" alt="Instagram logo" /></a>
-            <a aria-label="Follow on Twitter" href=""><img src="/static/twitter.png" alt="Twitter logo" /></a>
-          </div>
-        </div>
-        <div class="footer-media">
-          <img src="/static/poster.png" alt="Movie poster for ALL IN: THE FIGHT FOR DEMOCRACY" />
-          <div class="footer-embeds">
-            <a class="twitter-timeline" href="https://twitter.com/allinthefilm?ref_src=twsrc%5Etfw">Tweets by allinthefilm</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-          </div>
-        </div>
-      </div>
-    </footer>
+    <%= require('html-loader!./footer.html') %>
   </body>
 </html>

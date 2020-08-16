@@ -1,0 +1,57 @@
+.tool {
+  background-color: $dark-black;
+  position: relative;
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 650px;
+    height: 900px;
+    background-image: url('/static/texture-4.png');
+  }
+
+  .main {
+    width: 100%;
+    max-width: 960px;
+    min-height: 90vh;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-top: 120px;
+    padding-bottom: 96px;
+    padding-left: 24px;
+    padding-right: 24px;
+    box-sizing: border-box;
+
+    z-index: 1;
+
+    @media (min-width: 768px) {
+      padding-top: 160px;
+    }
+  }
+
+  .tool-title {
+    display: block;
+
+    font-family: $decorative-font;
+    font-weight: bold;
+    font-size: 36px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+
+    -webkit-text-fill-color: transparent;
+    background-image: url('/static/texture-5.png');
+    -webkit-background-clip: text;
+
+    margin-bottom: 72px;
+    transform: scale(1.25, 1);
+
+    @media (min-width: 768px) {
+      font-size: 52px;
+    }
+  }
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%= require('html-loader!./head-tags.html') %>
+  </head>
+  <body class="tool">
+    <%= require('html-loader!./nav.html') %>
+    <main class="main">
+      <h1 class="tool-title">Get Election Reminders</h1>
+
+      <div>
+        <script type='text/javascript' src='https://d3rse9xjbp8270.cloudfront.net/at.js' crossorigin='anonymous'></script>
+        <style>
+        .ContactInformation .at-legend:first-of-type {display: none;}
+        .at form {margin: 0;background-color: #ffffff;padding: 50px;}
+        .at fieldset,.at-inner{border:none}
+        .at fieldset legend, .at {font-family:'Work Sans',Helvetica,Arial,Lucida,sans-serif;}
+        .at-title,header.at-title{display:none!important}
+        .at-legal{color:#000000;text-align:left;padding-bottom: 25px;}
+        .at-legal p {font-size: 11px !important; line-height:14px !important;}
+        .at{color:#000;font-family:'Work Sans',Helvetica,Arial,Lucida,sans-serif;line-height:1.5;font-weight:500;font-size:13px}
+        .at .btn-at-primary,.at h1,.at h2,.at h3,.at h4,.at h5,.at h6{font-family:'Work Sans',Helvetica,Arial,Lucida,sans-serif;}
+        .content.thankYou {text-align: center;}
+        .FooterHtml,.HeaderHtml,.MeterHtml{padding:0 11px;text-align:left}
+        .at .at-fieldset{padding:0}
+        .at h1,.at h2,.at h3,.at h4,.at h5,.at h6{color:#000000;font-weight:500;text-rendering:optimizeLegibility}
+        .at h1 {color: #ffffff;text-align: center;font-family: 'spectral',Georgia,"Times New Roman",serif;}
+        .at h2,.at label{color:#000000}
+        .at label{font-size:16px;font-weight:600}
+        .at-inner{border-radius:0;background-color:transparent}
+        .at input[type=number],.at input[type=search],.at input[type=tel],.at input[type=time],.at input[type=url],.at input[type=color],.at input[type=text],.at input[type=password],.at input[type=date],.at input[type=datetime],.at input[type=datetime-local],.at input[type=month],.at input[type=week],.at input[type=email],.at textarea{color:#000!important;background-color:#fff;border-color:#000000;border-width:3px;border-style:solid;-moz-border-radius:0;-webkit-border-radius:0;border-radius:0;width:100%;max-width:100%;font-size:20px;padding:10px 15px;height:60px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;outline:0;font-weight:600;box-shadow:none}
+        .at select{-webkit-appearance:none;-moz-appearance:none;appearance:none;border-radius:0;font-size:13px;padding:6px 10px;height:46px;background-color:#fff;border:3px solid #000000}
+        .at textarea{min-height:140px}
+        .at .btn-at-primary{height: 60px; width: 100%;background-color:transparent;color:#000;outline:0;border:3px solid #000000;font-size:16px;font-weight:600;padding:10px 20px;text-transform:uppercase;letter-spacing:1px;border-radius: 0;line-height:1}
+        .at .error input[type=number]:required::selection,.at .error input[type=search]:required::selection,.at .error input[type=tel]:required::selection,.at .error input[type=time]:required::selection,.at .error input[type=url]:required::selection,.at .error input[type=color]:required::selection,.at .error input[type=text]:required::selection,.at .error input[type=password]:required::selection,.at .error input[type=date]:required::selection,.at .error input[type=datetime]:required::selection,.at .error input[type=datetime-local]:required::selection,.at .error input[type=month]:required::selection,.at .error input[type=week]:required::selection,.at .error input[type=email]:required::selection,.at .error select:required::selection,.at .error small.error,.at .error textarea:required::selection,textarea.at .error input:required::selection{background:#da2017}
+        .at .btn-at-primary:hover{background-color:#000000;color:#ffffff;outline:0;border:3px solid #000000}
+        .at label.error{color:# da2017}
+        .at .error input[type=number]:focus,.at .error input[type=number]:hover,.at .error input[type=search]:focus,.at .error input[type=search]:hover,.at .error input[type=tel]:focus,.at .error input[type=tel]:hover,.at .error input[type=time]:focus,.at .error input[type=time]:hover,.at .error input[type=url]:focus,.at .error input[type=url]:hover,.at .error input[type=color]:focus,.at .error input[type=color]:hover,.at .error input[type=text]:focus,.at .error input[type=text]:hover,.at .error input[type=password]:focus,.at .error input[type=password]:hover,.at .error input[type=date]:focus,.at .error input[type=date]:hover,.at .error input[type=datetime]:focus,.at .error input[type=datetime]:hover,.at .error input[type=datetime-local]:focus,.at .error input[type=datetime-local]:hover,.at .error input[type=month]:focus,.at .error input[type=month]:hover,.at .error input[type=week]:focus,.at .error input[type=week]:hover,.at .error input[type=email]:focus,.at .error input[type=email]:hover,.at .error select:focus,.at .error select:hover,.at .error textarea:focus,.at .error textarea:hover,textarea.at .error input:focus,textarea.at .error input:hover{border-color:#da2017}
+        .at .error input[type=number]:required,.at .error input[type=search]:required,.at .error input[type=tel]:required,.at .error input[type=time]:required,.at .error input[type=url]:required,.at .error input[type=color]:required,.at .error input[type=text]:required,.at .error input[type=password]:required,.at .error input[type=date]:required,.at .error input[type=datetime]:required,.at .error input[type=datetime-local]:required,.at .error input[type=month]:required,.at .error input[type=week]:required,.at .error input[type=email]:required,.at .error select:required,.at .error textarea:required,textarea.at .error input:required{color:#da2017;border-color:#da2017;box-shadow:none}
+        .at .error small.error {font-weight: 700;color: #fff;}
+        .at fieldset legend{color:#000000;margin:0 0 15px 11px}
+        .at-form-submit {padding: 15px 0 15px 20px;}
+        .at input[type=number]:hover,.at input[type=search]:hover,.at input[type=tel]:hover,.at input[type=time]:hover,.at input[type=url]:hover,.at input[type=color]:hover,.at input[type=text]:hover,.at input[type=password]:hover,.at input[type=date]:hover,.at input[type=datetime]:hover,.at input[type=datetime-local]:hover,.at input[type=month]:hover,.at input[type=week]:hover,.at input[type=email]:hover,.at textarea:hover{border-color:#000000}
+        .at input[type=number]::-webkit-input-placeholder,.at input[type=search]::-webkit-input-placeholder,.at input[type=tel]::-webkit-input-placeholder,.at input[type=time]::-webkit-input-placeholder,.at input[type=url]::-webkit-input-placeholder,.at input[type=color]::-webkit-input-placeholder,.at input[type=text]::-webkit-input-placeholder,.at input[type=password]::-webkit-input-placeholder,.at input[type=date]::-webkit-input-placeholder,.at input[type=datetime]::-webkit-input-placeholder,.at input[type=datetime-local]::-webkit-input-placeholder,.at input[type=month]::-webkit-input-placeholder,.at input[type=week]::-webkit-input-placeholder,.at input[type=email]::-webkit-input-placeholder,.at textarea::-webkit-input-placeholder{color:#000000!important;font-family:'Work Sans',Helvetica,Arial,Lucida,sans-serif; font-size: 16px;}
+        .at input[type=number]:focus,.at input[type=search]:focus,.at input[type=tel]:focus,.at input[type=time]:focus,.at input[type=url]:focus,.at input[type=color]:focus,.at input[type=text]:focus,.at input[type=password]:focus,.at input[type=date]:focus,.at input[type=datetime]:focus,.at input[type=datetime-local]:focus,.at input[type=month]:focus,.at input[type=week]:focus,.at input[type=email]:focus,.at textarea:focus{background:#ffffff;border-color:#ccc;outline:0}
+        .multistep-layout .HeaderHtml{padding:0 35px 0 0}
+        .multistep-layout .HeaderHtml p{padding:0;line-height:27px;font-size:19px}
+        .at .at-steps{border-right:1px solid #c4cfdd}
+        .multistep-layout .FastAction{padding:20px;border:none;margin:0}
+        .at .select2-container--default .select2-selection--multiple {border-color: #000000;border-radius: 0;}
+        .at label small {color: #fff;}
+        .select2-search input {min-height: 40px;}
+        .select2-container .select2-search--inline .select2-search__field {font-size: 20px;margin: 10px 10px 5px 0;padding: 0;}
+        .at .select2-container--default .select2-selection--multiple .select2-selection__choice {background-color: #000;border-radius: 0px;border: solid #000 3px;color:#fff;}
+        .select2-container--default.select2-container--focus .select2-selection--multiple {border: solid black 3px;}
+        .select2-container--default .select2-selection--multiple {border: 3px solid #000;}
+        .at input[type="checkbox"]:checked+span:before {background-color: #f9d444;border-color: #f9d444;}
+        .at input[type="checkbox"]:checked+span:hover:before {background-color: #f9d444;border-color: #f9d444;}
+        .at input[type="checkbox"]+span:before {border-radius: 0;}
+        .at input[type="checkbox"]:checked+span:before, .at input[type="checkbox"]:checked+span:hover:before, .at input[type="checkbox"]+span:hover:before {background-color: #000;border-color: #000;}
+        .at input[type="checkbox"]:checked+span:after {color: #fff;}
+        .at select {font-size: 20px;padding: 10px 15px;height: 60px;}
+        .at p {font-size:20px; line-height:25px;}
+        .at-markup {margin-bottom: 25px;}
+        .FastAction.at-markup {margin-bottom: 25px;}
+        .fastAction {background: transparent;border-width: 0;padding: 0 11px;}
+        .fastAction p {color: #000000;font-size: 14px !important;line-height: 18px !important;}
+        .at a {color: #000000;}
+        .fastAction .profile-link {border-radius: 0;}
+        .at-markup.HeaderHtml p {color: #fff; text-align: center;}
+        .FooterHtml, .HeaderHtml, .MeterHtml {background-color: #000000;}
+        .at label small {color: #000000;}
+        .at input[type="text"], .at input[type="password"], .at input[type="date"], .at input[type="datetime"], .at input[type="datetime-local"], .at input[type="month"], .at input[type="week"], .at input[type="email"], .at input[type="number"], .at input[type="search"], .at input[type="tel"], .at input[type="time"], .at input[type="url"], .at input[type="color"], .at textarea {font-family:'Work Sans',Helvetica,Arial,Lucida,sans-serif; font-weight: 700; font-size: 16px; line-height: 25px;}
+        .content.thankYou {background-color: #fff;color: #000;padding: 20px;}
+        .content.thankYou h1 {color:#000;}
+
+        /*input[type="date"]::before{
+           color: #000;
+           content: attr(placeholder) ": ";
+        }
+        input[type="date"]:focus::before {
+           content: "" !important;
+        }*/
+
+        @media screen and (max-width:468px) {
+        .at form {padding: 10px 0 0 0;}
+        label>kbd, .suggestion>kbd {color: #000;}
+        .multistep-layout .HeaderHtml{padding:0}
+        .at-legal{padding-top: 15px;}
+        .at p {font-size:16px; line-height:20px;}
+        .fastAction p {font-size: 11px !important;line-height: 14px !important;}
+        .FastAction.at-markup {margin-bottom: 20px;margin-top: 20px;text-align: center;}
+        .at input[type=number]::-webkit-input-placeholder,.at input[type=search]::-webkit-input-placeholder,.at input[type=tel]::-webkit-input-placeholder,.at input[type=time]::-webkit-input-placeholder,.at input[type=url]::-webkit-input-placeholder,.at input[type=color]::-webkit-input-placeholder,.at input[type=text]::-webkit-input-placeholder,.at input[type=password]::-webkit-input-placeholder,.at input[type=date]::-webkit-input-placeholder,.at input[type=datetime]::-webkit-input-placeholder,.at input[type=datetime-local]::-webkit-input-placeholder,.at input[type=month]::-webkit-input-placeholder,.at input[type=week]::-webkit-input-placeholder,.at input[type=email]::-webkit-input-placeholder,.at textarea::-webkit-input-placeholder{font-size: 11px;}
+        .at input[type="text"], .at input[type="password"], .at input[type="date"], .at input[type="datetime"], .at input[type="datetime-local"], .at input[type="month"], .at input[type="week"], .at input[type="email"], .at input[type="number"], .at input[type="search"], .at input[type="tel"], .at input[type="time"], .at input[type="url"], .at input[type="color"], .at textarea {font-size: 11px;}
+        .at-date.dateofbirth input[type="date"]::before {content: "Date of Birth";margin-right: 10px;position: relative;top: 5px;}
+        .at-date.dateofbirth input[type="date"]:focus::before {content: "";margin-right: 0;position: relative;top: 5px;}
+        }
+        </style>
+        <div class="ngp-form"
+             data-form-url="https://secure.everyaction.com/v1/Forms/2niWElT86kW7qWQkGOivQA2"
+             data-fastaction-endpoint="https://fastaction.ngpvan.com"
+             data-inline-errors="true"
+             data-fastaction-nologin="true"
+             data-databag-endpoint="https://profile.ngpvan.com"
+             data-databag="everybody"
+                  data-mobile-autofocus="false">
+        </div>
+
+        <script>
+        var myPostRender = function(args) {
+          (function ($) {
+
+            $('.ngp-form .at-text.PostalCode input').attr("placeholder","Zip Code");
+            $('.ngp-form .at-text.MobilePhone input').attr("placeholder","Mobile Phone");
+            $('.ngp-form .at-text.HomePhone input').attr("placeholder","Home Phone");
+            $('.at-date.dateofbirth input').attr("onfocus","(this.type='date')");
+            $('.at-date.dateofbirth input').attr("onblur","(this.type='text')");
+
+          }(jQuery));
+          return args;
+        };
+
+        var nvtag_callbacks = nvtag_callbacks || {};
+        nvtag_callbacks.postRender = nvtag_callbacks.postRender || [];
+        nvtag_callbacks.postRender.push(myPostRender);
+        </script>
+      </div>
+    </main>
+    <%= require('html-loader!./footer.html') %>
+  </body>
+</html>

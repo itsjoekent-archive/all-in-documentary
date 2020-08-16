@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%= require('html-loader!./head-tags.html') %>
+  </head>
+  <body class="tool">
+    <%= require('html-loader!./nav.html') %>
+    <main class="main">
+      <h1 class="tool-title">See What’s On Your Ballot</h1>
+      <iframe src="https://voterguide.rockthevote.org/?partner=38694" style="border:0px #ffffff none;" name="myiFrame" scrolling="yes" frameborder="0" marginheight="0px" marginwidth="0px" height="800px" width="100%px" allowfullscreen></iframe>
+    </main>
+    <%= require('html-loader!./footer.html') %>
+  </body>
+</html>

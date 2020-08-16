@@ -116,9 +116,11 @@
 
   .footer-embeds {
     max-height: 400px;
+    margin-top: 48px;
     overflow-y: scroll;
 
     @media (min-width: 768px) {
+      margin-top: 0;
       margin-left: 48px;
     }
   }
