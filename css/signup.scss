@@ -207,8 +207,10 @@
 
     margin-bottom: 24px;
 
-    @media (min-width: 768px) {
-      flex: 0 0 calc(50% - 24px);
+    &:not(.--full) {
+      @media (min-width: 768px) {
+        flex: 0 0 calc(50% - 24px);
+      }  
     }
 
     label {

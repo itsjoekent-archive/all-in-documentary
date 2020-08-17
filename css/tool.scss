@@ -50,6 +50,18 @@
     }
   }
 
+  .tool-subtitle {
+    display: block;
+
+    font-family: $decorative-font;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    color: $white;
+
+    margin-bottom: 24px;
+  }
+
   .signup-form input {
     color: $medium-black;
     background-color: $white;
