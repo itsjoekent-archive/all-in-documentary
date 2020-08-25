@@ -2,6 +2,14 @@
   background-color: $medium-black;
 }
 
+.homepage.--no-hero .main section:first-child {
+  padding-top: 96px;
+
+  @media (min-width: 1024px) {
+    padding-top: 20vh;
+  }
+}
+
 .main {
   display: flex;
   flex-direction: column;

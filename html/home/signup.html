@@ -1,0 +1,39 @@
+<section class="signup">
+  <div class="signup-column">
+    <div class="signup-title-container">
+      <h2 class="signup-title">
+        <span class="signup-title--top">Join The</span>
+        <span class="signup-title--middle">Fight</span>
+        <span class="signup-title--bottom">For Voting Rights</span>
+      </h2>
+    </div>
+    <div class="signup-form">
+      <div class="signup-form--header">
+        <h3>Add your name to join Stacey Abrams and the #AllInForVoting team.</h3>
+        <p>We’ll send you information on how you can watch the film and updates on how you can join the fight against voter suppression, protect your right to vote, and mobilize every eligible American to vote on Election Day.</p>
+      </div>
+      <form name="signup" method="POST" data-netlify="true">
+        <div class="field-layout">
+          <div class="signup-form-field">
+            <label for="signup-form-name">Name</label>
+            <input id="signup-form-name" type="text" name="name" required />
+          </div>
+          <div class="signup-form-field">
+            <label for="signup-form-email">Email</label>
+            <input id="signup-form-email" type="email" name="email" required />
+          </div>
+          <div class="signup-form-field">
+            <label for="signup-form-zip">Zip Code</label>
+            <input id="signup-form-zip" type="number" name="zip" minlength="5" maxlength="5" required />
+          </div>
+          <div class="signup-form-field">
+            <label for="signup-form-tel">Phone</label>
+            <input id="signup-form-tel" type="tel" name="tel" required />
+          </div>
+        </div>
+        <button type="submit">submit</button>
+        <p class="signup-form-disclaimer">Disclaimer: By signing up, you consent to receive periodic text messages from the All In For Voting campaign and Fair Fight. Message and data rates may apply. Text HELP for more information. Text STOP to stop receiving messages.</p>
+      </form>
+    </div>
+  </div>
+</section>

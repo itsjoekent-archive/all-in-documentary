@@ -2,14 +2,20 @@ import '../css/main.scss';
 
 (function () {
   const trailer = document.getElementById('trailer');
+  const openTrailer = document.getElementById('open-trailer');
+  const closeTrailer = document.getElementById('close-trailer');
 
-  document.getElementById('open-trailer').addEventListener('click', function() {
-    trailer.classList.add('--open');
-  });
+  if (openTrailer) {
+    openTrailer.addEventListener('click', function() {
+      trailer.classList.add('--open');
+    });
+  }
 
-  document.getElementById('close-trailer').addEventListener('click', function() {
-    trailer.classList.remove('--open');
-  });
+  if (closeTrailer) {
+    closeTrailer.addEventListener('click', function() {
+      trailer.classList.remove('--open');
+    });
+  }
 
   let isNavigationOpen = false;
   const navigation = document.getElementById('navigation');

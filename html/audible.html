@@ -3,13 +3,12 @@
   <head>
     <%= require('html-loader!./partials/head-tags.html') %>
   </head>
-  <body class="tool">
+  <body class="homepage --no-hero">
     <%= require('html-loader!./partials/nav.html') %>
     <main class="main">
-      <div class="tool-column">
-        <h1 class="tool-title">Check Your Voter Registration Status</h1>
-        <iframe id="myIframe" src="https://am-i-registered-to-vote.org/allin/" width="100%" height="1200" scrolling="no"></iframe>
-      </div>
+      <%= require('html-loader!./home/actions.html') %>
+      <%= require('html-loader!./home/signup.html') %>
+      <%= require('html-loader!./home/partners.html') %>
     </main>
     <%= require('html-loader!./partials/footer.html') %>
   </body>

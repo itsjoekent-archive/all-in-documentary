@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <%= require('html-loader!./head-tags.html') %>
+    <%= require('html-loader!./partials/head-tags.html') %>
   </head>
   <body class="homepage">
     <div id="trailer" class="video-overlay">
@@ -10,7 +10,7 @@
       <iframe class="tablet-overlay" width="560" height="315" src="https://www.youtube.com/embed/t6jVGswLPd8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <iframe class="desktop-overlay" width="960" height="650" src="https://www.youtube.com/embed/t6jVGswLPd8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-    <%= require('html-loader!./nav.html') %>
+    <%= require('html-loader!./partials/nav.html') %>
     <main class="main">
       <section class="hero">
         <div class="hero-inner">
@@ -28,237 +28,10 @@
           </div>
         </div>
       </section>
-      <section class="actions">
-        <div class="actions-title-container">
-          <h2 class="actions-title">
-            <span class="actions-title--top">voting</span>
-            <span class="actions-title--bottom">action hub</span>
-          </h2>
-          <p class="actions-subtitle">Go #AllInForVoting!</p>
-        </div>
-        <div class="actions-grid">
-          <a class="action-item" href="/register-to-vote" aria-label="Register to vote">
-            <img class="action-item-cover" src="/static/actions/be-a-voter.png" alt="Pile of stickers saying 'Be a voter'" />
-            <div class="action-item-details">
-              <span class="action-item-mark">
-                <img src="/static/actions/check-icon.png" alt="Checkmark icon" />
-              </span>
-              <h6>Register to vote</h6>
-              <p>Take the first step in exercising your right to vote.</p>
-            </div>
-          </a>
-          <a class="action-item" href="/registration-status" aria-label="Check your voter registration status">
-            <img class="action-item-cover" src="/static/actions/smiling.png" alt="A woman smiling" />
-            <div class="action-item-details">
-              <span class="action-item-mark">
-                <img src="/static/actions/person-checked-icon.png" alt="Committed to vote icon" />
-              </span>
-              <h6>Check your status</h6>
-              <p>Make sure that you’re ready to vote (even if you already think you are).</p>
-            </div>
-          </a>
-          <a class="action-item" href="/commit-to-vote" aria-label="Commit to vote">
-            <img class="action-item-cover" src="/static/actions/checklist.png" alt="A checklist in a notebook" />
-            <div class="action-item-details">
-              <span class="action-item-mark">
-                <img src="/static/actions/checklist-icon.png" alt="Checklist icon" />
-              </span>
-              <h6>Commit to vote</h6>
-              <p>Commit to yourself and the world that you’ll vote in every election. Then help 3 friends do the same.</p>
-            </div>
-          </a>
-          <a class="action-item" href="/mail-in-ballot" aria-label="Request a mail in ballot">
-            <img class="action-item-cover" src="/static/actions/mail-mask.png" alt="A face mask and a ballot envelope" />
-            <div class="action-item-details">
-              <span class="action-item-mark">
-                <img src="/static/actions/mail-icon.png" alt="Mail icon" />
-              </span>
-              <h6>Request mail-in ballot</h6>
-              <p>See if you can cast your vote safely from home.</p>
-            </div>
-          </a>
-          <a class="action-item" target="_blank" href="https://www.rockthevote.org/how-to-vote/" aria-label="How to vote by state (Opens in new tab)">
-            <img class="action-item-cover" src="/static/actions/map.png" alt="A wall map of the United States" />
-            <div class="action-item-details">
-              <span class="action-item-mark">
-                <img src="/static/actions/pin-icon.png" alt="GPS pin icon" />
-              </span>
-              <h6>How to vote by state</h6>
-              <p>Each state is different, find out how to vote where you live.</p>
-            </div>
-          </a>
-          <a class="action-item" href="/election-reminders" aria-label="Get election reminders">
-            <img class="action-item-cover" src="/static/actions/calendar.png" alt="A notebook with a calendar page" />
-            <div class="action-item-details">
-              <span class="action-item-mark">
-                <img src="/static/actions/alert-icon.png" alt="Alert icon" />
-              </span>
-              <h6>Get election reminders</h6>
-              <p>Don’t let a missed deadline prohibit you from making your voice heard.</p>
-            </div>
-          </a>
-          <a class="action-item" target="_blank" href="https://www.vote.org/polling-place-locator/" aria-label="Find your polling place (Opens in new tab)">
-            <img class="action-item-cover" src="/static/actions/polling-booth.png" alt="A group of people in polling booths" />
-            <div class="action-item-details">
-              <span class="action-item-mark">
-                <img src="/static/actions/search-icon.png" alt="Search icon" />
-              </span>
-              <h6>Find your polling place</h6>
-              <p>Find out where you can cast your ballot safely in person.</p>
-            </div>
-          </a>
-          <a class="action-item" href="/ballot-preview" aria-label="See what's on your ballot">
-            <img class="action-item-cover" src="/static/actions/ballot-drop.png" alt="A voter placing a ballot in a box" />
-            <div class="action-item-details">
-              <span class="action-item-mark">
-                <img src="/static/actions/ballot-icon.png" alt="Ballot icon" />
-              </span>
-              <h6>See what's on your ballot</h6>
-              <p>Get informed and learn who and what you’re voting for.</p>
-            </div>
-          </a>
-          <a class="action-item" target="_blank" href="https://www.aclu.org/know-your-rights/voting-rights/" aria-label="Know your rights (Opens in new tab)">
-            <img class="action-item-cover" src="/static/actions/protest.png" alt="A protest organizer holding a megaphone" />
-            <div class="action-item-details">
-              <span class="action-item-mark">
-                <img src="/static/actions/megaphone-icon.png" alt="Megaphone icon" />
-              </span>
-              <h6>Know your rights</h6>
-              <p>Make sure your voice is counted. Learn how to protect your voice.</p>
-            </div>
-          </a>
-        </div>
-        <div class="action-help">
-          <div class="action-help-column">
-            <h3>Election Protection Hotline:</h3>
-            <p>Have a question about the voting process in your state or experiencing difficulties voting in person? Call the free Election Protection hotline to be connected to an expert who can support you.</p>
-          </div>
-          <div class="action-help-column">
-            <p>English: 1-866 OUR VOTE</p>
-            <p>Spanish: 1-888-VE-Y-VOTA</p>
-            <p>Arabic: 1-844-YALLA-US</p>
-          </div>
-          <div class="action-help-column">
-            <p><strong>For Bengali, Cantonese, Hindi, Urdu, Korean, Mandarin, Tagalog, or Vietnamese: 1-888-274-8683</strong></p>
-          </div>
-        </div>
-      </section>
-      <section class="signup">
-        <div class="signup-column">
-          <div class="signup-title-container">
-            <h2 class="signup-title">
-              <span class="signup-title--top">Join The</span>
-              <span class="signup-title--middle">Fight</span>
-              <span class="signup-title--bottom">For Voting Rights</span>
-            </h2>
-          </div>
-          <div class="signup-form">
-            <div class="signup-form--header">
-              <h3>Add your name to join Stacey Abrams and the #AllInForVoting team.</h3>
-              <p>We’ll send you information on how you can watch the film and updates on how you can join the fight against voter suppression, protect your right to vote, and mobilize every eligible American to vote on Election Day.</p>
-            </div>
-            <form name="signup" method="POST" data-netlify="true">
-              <div class="field-layout">
-                <div class="signup-form-field">
-                  <label for="signup-form-name">Name</label>
-                  <input id="signup-form-name" type="text" name="name" required />
-                </div>
-                <div class="signup-form-field">
-                  <label for="signup-form-email">Email</label>
-                  <input id="signup-form-email" type="email" name="email" required />
-                </div>
-                <div class="signup-form-field">
-                  <label for="signup-form-zip">Zip Code</label>
-                  <input id="signup-form-zip" type="number" name="zip" minlength="5" maxlength="5" required />
-                </div>
-                <div class="signup-form-field">
-                  <label for="signup-form-tel">Phone</label>
-                  <input id="signup-form-tel" type="tel" name="tel" required />
-                </div>
-              </div>
-              <button type="submit">submit</button>
-              <p class="signup-form-disclaimer">Disclaimer: By signing up, you consent to receive periodic text messages from the All In For Voting campaign and Fair Fight. Message and data rates may apply. Text HELP for more information. Text STOP to stop receiving messages.</p>
-            </form>
-          </div>
-        </div>
-      </section>
-      <section class="partners">
-        <div class="partners-column">
-          <h2>Our partners:</h2>
-          <div class="partners-grid">
-            <div class="partner">
-              <img src="/static/partners/fair-fight.png" alt="Logo for the Fair Fight organization" />
-            </div>
-            <div class="partner">
-              <img src="/static/partners/advancement-project.png" alt="Logo for the Advancement Project" />
-            </div>
-            <div class="partner">
-              <img src="/static/partners/alliance-youth-action.png" alt="Logo for the Alliance For Youth Action" />
-            </div>
-            <div class="partner">
-              <img src="/static/partners/all-in.png" alt="Logo for the ALL IN Campus Democracy Challenge" />
-            </div>
-            <div class="partner">
-              <img src="/static/partners/all-on-the-line.png" alt="Logo for the All On The Line organization" />
-            </div>
-            <div class="partner">
-              <img src="/static/partners/all-voting-is-local.png" alt="Logo for the All Voting Is Local campaign" />
-            </div>
-            <div class="partner">
-              <img src="/static/partners/black-voters-matter.png" alt="Logo for the Black Voters Matter organization" />
-            </div>
-            <div class="partner">
-              <img src="/static/partners/campus-vote.jpg" alt="Logo for the Campus Vote Project" />
-            </div>
-            <div class="partner">
-              <img src="/static/partners/community-change.png" alt="Logo for the Community Change organization" />
-            </div>
-            <div class="partner">
-              <img src="/static/partners/demos.png" alt="Logo for the Demos organization" />
-            </div>
-            <div class="partner">
-              <img src="/static/partners/866-our-vote.png" alt="Logo for the 866 Our Vote organization" />
-            </div>
-            <div class="partner">
-              <img src="/static/partners/florida-rights.png" alt="Logo for the Florida Rights Restoration Coalition" />
-            </div>
-            <div class="partner">
-              <img src="/static/partners/indivisible.png" alt="Logo for the Indivisible organization" />
-            </div>
-            <div class="partner">
-              <img src="/static/partners/jwi.png" alt="Logo for the Jewish Women International organization" />
-            </div>
-            <div class="partner">
-              <img src="/static/partners/lawyers-committee.png" alt="Logo for the Lawyers Committee for Civil Rights under law" />
-            </div>
-            <div class="partner">
-              <img src="/static/partners/lucha.png" alt="Logo for the LUCHA (Living United for Change in Arizona) organization" />
-            </div>
-            <div class="partner">
-              <img src="/static/partners/movement-voter-project.png" alt="Logo for the Movement Voter Project" />
-            </div>
-            <div class="partner">
-              <img src="/static/partners/people-american-way.png" alt="Logo for the People For The American Way organization" />
-            </div>
-            <div class="partner">
-              <img src="/static/partners/splc.png" alt="Logo for the Southern Poverty Law Center" />
-            </div>
-            <div class="partner">
-              <img src="/static/partners/when-we-all-vote.png" alt="Logo for the When We All Vote organization" />
-            </div>
-            <div class="partner">
-              <img src="/static/partners/leadership-conf.png" alt="Logo for the Leadership Conference on Human and Civil rights" />
-            </div>
-            <div class="partner">
-              <img src="/static/partners/rock-the-vote.png" alt="Logo for the Rock The Vote organization" />
-            </div>
-            <div class="partner">
-              <img src="/static/partners/vote-latino.png" alt="Logo for the Vote Latino organization" />
-            </div>
-          </div>
-        </div>
-      </section>
+      <%= require('html-loader!./home/actions.html') %>
+      <%= require('html-loader!./home/signup.html') %>
+      <%= require('html-loader!./home/partners.html') %>
     </main>
-    <%= require('html-loader!./footer.html') %>
+    <%= require('html-loader!./partials/footer.html') %>
   </body>
 </html>

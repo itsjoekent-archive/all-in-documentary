@@ -57,6 +57,10 @@ module.exports = {
       filename: 'index.html',
     }),
     new HtmlWebpackPlugin({
+      template: 'html/audible.html',
+      filename: 'audible.html',
+    }),
+    new HtmlWebpackPlugin({
       template: 'html/register-to-vote.html',
       filename: 'register-to-vote.html',
     }),
