@@ -92,6 +92,10 @@ module.exports = {
       template: 'html/theater-times.html',
       filename: 'theater-times.html',
     }),
+    new HtmlWebpackPlugin({
+      template: 'html/new-page.html',
+      filename: 'new-page.html',
+    }),
     new CopyPlugin({
       patterns: [
         { from: 'static', to: 'static' },

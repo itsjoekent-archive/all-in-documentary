@@ -1,37 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <%= require('html-loader!./partials/head-tags.html') %>
-  </head>
-  <body class="homepage">
-    <div id="trailer" class="video-overlay">
-      <button id="close-trailer">← back to home</button>
-      <iframe class="mobile-overlay" width="336" height="189" src="https://www.youtube.com/embed/t6jVGswLPd8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <iframe class="tablet-overlay" width="560" height="315" src="https://www.youtube.com/embed/t6jVGswLPd8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <iframe class="desktop-overlay" width="960" height="650" src="https://www.youtube.com/embed/t6jVGswLPd8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <%= require('html-loader!./partials/nav.html') %>
-    <main class="main">
-      <section class="hero">
-        <div class="hero-inner">
-          <blockquote class="hero-quote">
-            <p>The fundamental power of democracy lies in the right to vote, and if you protect that right, you create possibilities for everything else.</p>
-            <footer>— Stacey abrams</footer>
-          </blockquote>
-          <div class="hero-trailer">
-            <div class="trailer-block">
-              <h3>Watch the film trailer:</h3>
-              <button id="open-trailer" aria-label="Open film trailer">
-                <img src="/static/trailer-cover.png" alt="Film trailer cover featuring Stacey Abrams" />
-              </button>
-            </div>
+<head>
+  <%= require('html-loader!./partials/head-tags.html') %> 
+
+</head>
+<body class="homepage">
+  <div id="trailer" class="video-overlay">
+    <button id="close-trailer">← back to home</button>
+    <iframe class="mobile-overlay" width="336" height="189" src="https://www.youtube.com/embed/t6jVGswLPd8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe class="tablet-overlay" width="560" height="315" src="https://www.youtube.com/embed/t6jVGswLPd8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe class="desktop-overlay" width="960" height="650" src="https://www.youtube.com/embed/t6jVGswLPd8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <%= require('html-loader!./partials/nav.html') %>
+  <main class="main">
+    <section class="hero">
+      <div class="hero-inner">
+        <blockquote class="hero-quote">
+          <p>The fundamental power of democracy lies in the right to vote, and if you protect that right, you create possibilities for everything else.</p>
+          <footer>— Stacey abrams</footer>
+        </blockquote>
+        <div class="hero-trailer">
+          <div class="trailer-block">
+            <h3>Watch the film trailer:</h3>
+            <button id="open-trailer" aria-label="Open film trailer">
+              <img src="/static/trailer-cover.png" alt="Film trailer cover featuring Stacey Abrams" />
+            </button>
           </div>
         </div>
-      </section>
-      <%= require('html-loader!./home/actions.html') %>
-      <%= require('html-loader!./home/signup.html') %>
-      <%= require('html-loader!./home/partners.html') %>
-    </main>
-    <%= require('html-loader!./partials/footer.html') %>
-  </body>
+      </div>
+    </section>
+    <%= require('html-loader!./home/actions.html') %>
+    <%= require('html-loader!./home/signup.html') %>
+    <%= require('html-loader!./home/partners.html') %>
+  </main>
+  <%= require('html-loader!./partials/footer.html') %>
+  
+  
+</body>
 </html>
