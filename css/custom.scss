@@ -157,15 +157,20 @@ section#scheduale-location{
             padding: 10px 0;
             table{
              width:100%;
+             table-layout: fixed;
+    		 display: table;
               tr{
                border-top:1px solid #373737;
                padding: 7px 0;
-               display: block;
+               display: table-row;
 				td{
 				  width: 6%;
 				  color:#fff;
 				  font-family: MuseoSans,sans-serif;
 				  font-size:18px;
+				  display:table-cell;
+				padding: 7px 0;
+				vertical-align: middle;
                 &:nth-of-type(5){
 				  width: 20%;
 	              text-align: right;
