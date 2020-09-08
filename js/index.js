@@ -1,5 +1,5 @@
 import '../css/main.scss';
-var $ = require('jQuery');
+var $ = require('jquery');
 (function () {
   const trailer = document.getElementById('trailer');
   const openTrailer = document.getElementById('open-trailer');
