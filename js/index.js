@@ -35,15 +35,38 @@ var $ = require('jquery');
 
   var sheet_url = "https://spreadsheets.google.com/feeds/list/1LoXeop63we3nr8tmkFSV8Z0YWiB0zmPzYxtJqEB939k/od6/public/values?alt=json"; 
   $(document).ready(function(){
-    const fetch = require('node-fetch');
 
-    let url = sheet_url;
+// handle links with @href started with '#' only
+$(document).on('click', 'a[href^="#"]', function(e) {
+    // target element id
+    var id = $(this).attr('href');
 
-    let settings = { method: "Get" };
-    var $table = $("#location-data")
-    fetch(url, settings)
-    .then(res => res.json())
-    .then((json) => {
+    // target element
+    var $id = $(id);
+    if ($id.length === 0) {
+      return;
+    }
+
+    // prevent standard hash navigation (avoid blinking in IE)
+    e.preventDefault();
+
+    // top position relative to the document
+    var pos = $id.offset().top;
+
+    // animated top scrolling
+    $('body, html').animate({scrollTop: pos});
+  });
+
+
+const fetch = require('node-fetch');
+
+let url = sheet_url;
+
+let settings = { method: "Get" };
+var $table = $("#location-data")
+fetch(url, settings)
+.then(res => res.json())
+.then((json) => {
         // do something with JSON
         var entry = json.feed.entry;
         var tr = "<tr>";
@@ -63,7 +86,7 @@ var $ = require('jquery');
       });
         $table.find('tbody').empty().append(tr);
       });
-    
-  })
+
+})
 
 })();

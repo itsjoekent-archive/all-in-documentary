@@ -81,6 +81,8 @@
 	   margin: 18px 0;
 	  p{
 	    color:#fff;
+	    font-weight: bold;
+	    letter-spacing: 0.5px;
 	    font-family: 'ITC Cheltenham', serif;
 	    font-size:24px;
 	    text-align:center;
@@ -156,6 +158,21 @@ section#scheduale-location{
 		.location-detail{
             padding: 10px 0;
             table{
+            td:nth-child(1) {
+			    width: 15% !important;
+			}
+			td:nth-child(2) {
+			    width: 10% !important;
+			}
+			td:nth-child(3) {
+			    width: 10% !important;
+			}
+			td:nth-child(4) {
+			    width: 35% !important;
+			}
+			td:nth-child(5) {
+			    width: 30% !important;
+			}
              width:100%;
              table-layout: fixed;
     		 display: table;
@@ -164,7 +181,7 @@ section#scheduale-location{
                padding: 7px 0;
                display: table-row;
 				td{
-				  width: 6%;
+				  width: 10%;
 				  color:#fff;
 				  font-family: MuseoSans,sans-serif;
 				  font-size:18px;
@@ -175,10 +192,14 @@ section#scheduale-location{
 				  width: 20%;
 	              text-align: right;
 				}
+				@media screen and (max-width:1200px){
+                   font-size:16px;
+				}
 				}
 			   }
 			   @media screen and (max-width:767px){
-			     width:500px;
+			     width:800px;
+			     overflow-x: scroll;
 			   }
 			 }
 			@media screen and (max-width:767px){
@@ -234,6 +255,7 @@ section#scheduale-location{
 	    color:#fff;
 	    font-family: MuseoSans,sans-serif;
 	    font-size:18px;
+	    font-weight: 500;
 	    line-height:26px;
 	    margin-bottom:30px;
 	   @media screen and (max-width:768px){
@@ -244,6 +266,7 @@ section#scheduale-location{
 	  }
 	  a{
 	    color:#da3840;
+	    font-weight: 500;
 	    font-family: MuseoSans,sans-serif;
 	    font-size:18px;
 	    text-decoration:none;
@@ -263,6 +286,7 @@ section#scheduale-location{
 	padding: 115px 0 0 0;
   .faq-section-content{
    text-align:center;
+   padding-bottom:50px;
     strong,p{
       color:#fff;
       font-family: MuseoSans,sans-serif;
@@ -282,6 +306,9 @@ section#scheduale-location{
       font-weight:500;
       margin-bottom:30px;
       line-height:26px;
+    }
+    @media screen and (max-width:768px){
+       padding-bottom: 10px;
     }
   }
   @media screen and (max-width:768px){

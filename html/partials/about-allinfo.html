@@ -1,46 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-  </head>
-  <body class="homepage">
-    <div id="trailer" class="video-overlay">
-      <button id="close-trailer">← back to home</button>
-      <iframe class="mobile-overlay" width="336" height="189" src="https://www.youtube.com/embed/t6jVGswLPd8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <iframe class="tablet-overlay" width="560" height="315" src="https://www.youtube.com/embed/t6jVGswLPd8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <iframe class="desktop-overlay" width="960" height="650" src="https://www.youtube.com/embed/t6jVGswLPd8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<section class="about-allinfo main-wrapper" id="about-allinfo">
+  <div class="about-allinfo-title main-title">
+    <h2>All In For Voting <br>Bus Tour</h2>
+  </div>
+  <div class="about-allinfo-inner main-inner-wrapper">
+    <div class="content-img-section">
+      <div class="left-side-img">
+        <img src="images/main-top-img.jpg">
+      </div>
+      <div class="right-side-content">
+        <div class="top-content">
+          <p>To launch the documentary film All In: The Fight for Democracy, we’re hitting the road to promote voter rights, register voters, and screen the film itself on outdoor pop-up screens for as many people as we can. A fleet of five buses will tour in 10 states, setting up temporary stations in over 50 locations that are most impacted by voter-suppression tactics. </p>
+        </div>
+        <div class="button-content">
+          <p>Guests will be able to:</p>
+          <ul>
+            <li>- Register to vote</li>
+            <li>- Check their registration</li>
+            <li>- Find their local polling place</li>
+            <li>- Request a mail-in ballot</li>
+            <li>- Volunteer as a poll worker </li>
+          </ul>
+        </div>
+      </div>
     </div>
-    <main class="main">
-      <section class="about-allinfo main-wrapper" id="about-allinfo">
-      	<div class="about-allinfo-title main-title">
-        	<h2>All In For Voting <br>Bus Tour</h2>
-        </div>
-        <div class="about-allinfo-inner main-inner-wrapper">
-            <div class="content-img-section">
-            	<div class="left-side-img">
-            		<img src="images/main-top-img.jpg">
-                </div>
-                <div class="right-side-content">
-                	<div class="top-content">
-                		<p>To launch the documentary film All In: The Fight for Democracy, we’re hitting the road to promote voter rights, register voters, and screen the film itself on outdoor pop-up screens for as many people as we can. A fleet of five buses will tour in 10 states, setting up temporary stations in over 50 locations that are most impacted by voter-suppression tactics. </p>
-                    </div>
-                    <div class="button-content">
-                    	<p>Guests will be able to:</p>
-                    	<ul>
-                    		<li>- Register to vote</li>
-                    		<li>- Check their registration</li>
-                    		<li>- Find their local polling place</li>
-                    		<li>- Request a mail-in ballot</li>
-                    		<li>- Volunteer as a poll worker </li>
-                    	</ul>
-                    </div>
-                </div>
-            </div>
-            <div class="main-bottom-content">
-            	<p>Hope to catch you on the road!</p>
-            </div>
-        </div>
-      </section>
-    </main>
-    <%= require('html-loader!./partials/footer.html') %>
-  </body>
-</html>
+    <div class="main-bottom-content">
+      <p>Hope to catch you on the road!</p>
+    </div>
+  </div>
+</section>
