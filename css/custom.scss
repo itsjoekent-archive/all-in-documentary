@@ -1,0 +1,290 @@
+/* about-allinfo-section */
+
+.about-allinfo{
+	padding: 160px 0 0 0;
+	.content-img-section{
+	   display: flex;
+		   .left-side-img{
+		     flex: 0 0 50%;
+		     width:50%;
+		     img{
+		       width:100%;
+		     }
+		     @media screen and (max-width:1024px){
+		        flex: auto;
+		     }
+		     @media screen and (max-width:768px){
+		        width:100%;
+		     }
+		   }
+		   .right-side-content{
+		     flex: 0 0 50%;
+		     width:50%;
+		     padding: 0px 0px 0 35px;
+		     margin-top: -5px;
+		     .top-content{
+		        p{
+					color: #fff;
+				    font-weight: 900;
+				    font-size: 24px;
+				    line-height: 32px;
+				    font-family: 'ITC Cheltenham', serif;
+				    padding-right: 30px;
+				  @media screen and (max-width:1024px){
+				    padding-right: 0px;
+				  }
+				  @media screen and (max-width:991px){
+				    font-size: 20px;
+				    line-height: 28px;
+				  }
+				  @media screen and (max-width:991px){
+				    font-size: 16px;
+				    line-height: 26px;
+				  }
+		        }
+		     }
+		     .button-content{
+		         padding-top: 35px;
+	           p{
+				    font-size: 18px;
+				    color: #fff;
+				    font-weight: 900;
+				    font-family: MuseoSans,sans-serif;
+				    padding-bottom: 7px;
+	           }
+	           ul{
+	            li{
+	              font-size: 18px;
+			      color: #fff;
+			      font-weight: 500;
+	              font-family: MuseoSans,sans-serif;
+	              padding: 6px 0;
+	             @media screen and (max-width:991px){
+	               font-size: 16px;
+	             }
+	            }
+	           }
+		     } 
+		     @media screen and (max-width:1024px){
+		        flex: auto;
+		     }
+		     @media screen and (max-width:768px){
+		        width:100%;
+                padding: 25px 0 0 0;
+		     }
+		   }
+		@media screen and (max-width:768px){
+		   display:block;
+		}
+	}
+	.main-bottom-content{
+	   margin: 18px 0;
+	  p{
+	    color:#fff;
+	    font-family: 'ITC Cheltenham', serif;
+	    font-size:24px;
+	    text-align:center;
+	   @media screen and (max-width:768px){
+	     font-size:18px;
+	   }
+	  }
+	  @media screen and (max-width:768px){
+	    margin: 25px 0 0 0;
+	  }
+	}
+}
+
+.main-inner-wrapper{
+	width:72%;
+	margin:0 auto;
+  @media screen and (max-width:1190px){
+    width:80%;
+  }
+  @media screen and (max-width:991px){
+    width:90%;
+  }
+}
+.main-wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    width:100%;
+}
+.main-title{
+    padding-bottom:80px;
+    h2{
+	    text-align: center;
+	    font-family: 'ITC Cheltenham', serif;
+	    font-size: 54px;
+	    color: #fff;
+	    font-weight: bold;
+	    text-transform: uppercase;
+	    line-height: 52px;
+        letter-spacing: 0.5px;
+        padding:0 20px;
+       @media screen and (max-width:768px){
+         font-size: 34px;
+         line-height:40px;
+       }
+       @media screen and (max-width:475px){
+		   font-size: 22px;
+		   line-height: 26px;
+       }
+	 }
+   @media screen and (max-width:768px){
+     padding-bottom:50px;
+   }
+   @media screen and (max-width:475px){
+     padding-bottom:30px;
+   }
+}
+
+/* Over-about-allinfo-section */
+
+/* Scheduale-location-banner */
+
+section#scheduale-location{
+    padding: 115px 0 0 0;
+	.scheduale-location-content{
+		.scheduale-location-banner{
+		   text-align:center;
+		  img{
+		    width:100%;
+		  }
+		}
+		.scheduale-location-data {
+		  margin-top:50px;
+		.location-detail{
+            padding: 10px 0;
+            table{
+             width:100%;
+             table-layout: fixed;
+    		 display: table;
+              tr{
+               border-top:1px solid #373737;
+               padding: 7px 0;
+               display: table-row;
+				td{
+				  width: 6%;
+				  color:#fff;
+				  font-family: MuseoSans,sans-serif;
+				  font-size:18px;
+				  display:table-cell;
+				padding: 7px 0;
+				vertical-align: middle;
+                &:nth-of-type(5){
+				  width: 20%;
+	              text-align: right;
+				}
+				}
+			   }
+			   @media screen and (max-width:767px){
+			     width:500px;
+			   }
+			 }
+			@media screen and (max-width:767px){
+			 overflow: hidden;
+             overflow-x: scroll;
+            }
+		 }
+		 @media screen and (max-width:768px){
+		    margin-top: 20px;
+		 }
+		}
+	}
+	@media screen and (max-width:768px){
+	  padding: 50px 0 0 0;
+	}
+}
+/* Over-Scheduale-location-banner */
+
+/* instagram - section */
+.instagram-section{
+	padding:120px 0 0 0;
+  @media screen and (max-width:768px){
+	  padding: 50px 0 0 0;
+  }
+}
+
+
+.about-artist-section{
+	.about-artist-content{
+		display:flex;
+	 @media screen and (max-width:768px){
+        display:block;
+	 }
+	 .about-artist-image{
+	   width:33%;
+	   img{
+	     width:100%;
+	   }
+	   @media screen and (max-width:768px){
+	      width:100%;
+	   }
+	 }
+	 .about-artist-text{
+	     width:67%;
+	    @media screen and (max-width:768px){
+	      width:100%;
+	    }
+	 }
+	}
+	.about-artist-text{
+	   padding-left: 35px;
+	  p{
+	    color:#fff;
+	    font-family: MuseoSans,sans-serif;
+	    font-size:18px;
+	    line-height:26px;
+	    margin-bottom:30px;
+	   @media screen and (max-width:768px){
+	     font-size:16px;
+	     line-height:24px;
+	     margin-bottom:15px;
+	   }
+	  }
+	  a{
+	    color:#da3840;
+	    font-family: MuseoSans,sans-serif;
+	    font-size:18px;
+	    text-decoration:none;
+	  }
+	  @media screen and (max-width:768px){
+	     padding:35px 0 0 0;
+	  }
+	  @media screen and (max-width:768px){
+	     padding:25px 0 0 0;
+	  }
+	}
+}
+
+/* faq-section */
+
+.faq-section{
+	padding: 115px 0 0 0;
+  .faq-section-content{
+   text-align:center;
+    strong,p{
+      color:#fff;
+      font-family: MuseoSans,sans-serif;
+      font-size:18px;
+      line-height:26px;
+     @media screen and (max-width:768px){
+       font-size:16px;
+       line-height:22px;
+     }
+    }
+    strong{
+      font-weight:900;
+      margin-bottom:3px;
+      display:block;
+    }
+    p{
+      font-weight:500;
+      margin-bottom:30px;
+      line-height:26px;
+    }
+  }
+  @media screen and (max-width:768px){
+    padding: 50px 0 0 0;
+  }
+}

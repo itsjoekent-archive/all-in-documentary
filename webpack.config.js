@@ -88,6 +88,10 @@ module.exports = {
       template: 'html/mail-in-ballot.html',
       filename: 'mail-in-ballot.html',
     }),
+    new HtmlWebpackPlugin({
+      template: 'html/new-page.html',
+      filename: 'new-page.html',
+    }),
     new CopyPlugin({
       patterns: [
         { from: 'static', to: 'static' },

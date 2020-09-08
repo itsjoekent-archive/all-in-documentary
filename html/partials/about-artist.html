@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  </head>
+  <body class="homepage">
+    <div id="trailer" class="video-overlay">
+      <button id="close-trailer">← back to home</button>
+      <iframe class="mobile-overlay" width="336" height="189" src="https://www.youtube.com/embed/t6jVGswLPd8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe class="tablet-overlay" width="560" height="315" src="https://www.youtube.com/embed/t6jVGswLPd8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe class="desktop-overlay" width="960" height="650" src="https://www.youtube.com/embed/t6jVGswLPd8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <main class="main">
+      <section class="about-artist-section main-wrapper" id="about-artist-section">
+      	<div class="main-title">
+        	<h2>ABOUT THE ARTIST <br>ANDREA PIPPINS</h2>
+        </div>
+        <div class="about-artist-content main-inner-wrapper">
+          <div class="about-artist-image">
+            <img src="images/about-img.jpg">
+          </div>
+          <div class="about-artist-text">
+            <p>Andrea Pippins’ work has been featured in Essence Magazine, The New York Times, and O: The Oprah Magazine. She has worked with brands such as Bloomberg, Broadly, ESPN, The High Line, Lenny Letter, Lincoln Center, and the National Museum of African American History and Culture. </p>
+            <p>Pippins is also the author of: I Love My Hair, a coloring book featuring her illustrations celebrating various hairstyles and texture; Becoming Me, an interactive journal for young women to color, doodle, and brainstorm their way to a creative life; and We Inspire Me, a collection of essays, interviews, and advice on cultivating and empowering one's own creative community. She also illustrated Young Gifted and Black and Step Into Your Power.</p>
+            <a href="#">andreapippins.com</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <%= require('html-loader!./partials/footer.html') %>
+  </body>
+</html>
