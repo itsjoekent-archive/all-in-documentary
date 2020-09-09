@@ -96,6 +96,10 @@ module.exports = {
       template: 'html/new-page.html',
       filename: 'new-page.html',
     }),
+    new HtmlWebpackPlugin({
+      template: 'html/on-the-road-tour.html',
+      filename: 'on-the-road-tour.html',
+    }),
     new CopyPlugin({
       patterns: [
         { from: 'static', to: 'static' },
