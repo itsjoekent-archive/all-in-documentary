@@ -224,6 +224,7 @@ section#scheduale-location{
 
 /* instagram - section */
 .instagram-section{
+	display:none;
 	padding:120px 0 0 0;
   @media screen and (max-width:768px){
 	  padding: 50px 0 0 0;
@@ -312,7 +313,7 @@ section#scheduale-location{
       line-height:26px;
     }
     @media screen and (max-width:768px){
-       padding-bottom: 10px;
+       /*padding-bottom: 10px;*/
     }
   }
   @media screen and (max-width:768px){
