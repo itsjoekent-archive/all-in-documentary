@@ -145,7 +145,7 @@
 
 /* Scheduale-location-banner */
 
-section#scheduale-location{
+section#scheduale-location, section#about-artist-section{
     padding: 115px 0 0 0;
 	.scheduale-location-content{
 		.scheduale-location-banner{
@@ -160,22 +160,32 @@ section#scheduale-location{
             padding: 10px 0;
             table{
 			tr.past-event td {
-				color: gray !important;
+				color: #808285 !important;
 			}
             td:nth-child(1) {
 			    width: 15% !important;
 			}
 			td:nth-child(2) {
 			    width: 10% !important;
+			    @media screen and (max-width:768px){
+			     width:auto !important;
+			   }
 			}
 			td:nth-child(3) {
 			    width: 10% !important;
 			}
 			td:nth-child(4) {
 			    width: 35% !important;
+			    @media screen and (max-width:768px){
+			     width:auto !important;
+			   }
 			}
 			td:nth-child(5) {
 			    width: 30% !important;
+			   @media screen and (max-width:768px){
+			     width:auto !important;
+			     text-align:left !important;
+			   }
 			}
              width:100%;
              table-layout: fixed;
@@ -199,11 +209,18 @@ section#scheduale-location{
 				@media screen and (max-width:1200px){
                    font-size:16px;
 				}
+				@media screen and (max-width:798px){
+                   font-size:13px;
+                   text-align:left;
+                   word-break: break-all;
+                   padding: 5px 6px;
+                   line-height: 18px;
 				}
-			   }
-			   @media screen and (max-width:767px){
-			     width:800px;
-			     overflow-x: scroll;
+				@media screen and (max-width:360px){
+				  font-size:12px;
+				  padding: 5px 4px;
+				}
+				}
 			   }
 			 }
 			@media screen and (max-width:767px){
@@ -230,13 +247,13 @@ section#scheduale-location{
 	  padding: 50px 0 0 0;
   }
 }
-
 section#about-artist-section {
     padding-top: 160px;
     @media screen and (max-width:768px){
     	padding-top: 80px;
     }
 }
+
 .about-artist-section{
 	.about-artist-content{
 		display:flex;

@@ -60,17 +60,42 @@ $(document).on('click', 'a[href^="#"]', function(e) {
 
 const fetch = require('node-fetch');
 
-let url = sheet_url;
+function CompareDate(nextDate) {    
+           //Note: 00 is month i.e. January    
+           var q = new Date();
+           var m = q.getMonth();
+           var d = q.getDay();
+           var y = q.getFullYear();
 
-let settings = { method: "Get" };
-var $table = $("#location-data")
-fetch(url, settings)
-.then(res => res.json())
-.then((json) => {
+           var current_date = new Date(y,m,d);
+           var newDate = new Date(nextDate); //Year, Month, Date    
+           // console.log(newDate)
+           if (newDate < current_date) {    
+            return true;
+          }else {
+            return false;
+          }    
+        }   
+
+        let url = sheet_url;
+
+        let settings = { method: "Get" };
+        var $table = $("#location-data")
+        fetch(url, settings)
+        .then(res => res.json())
+        .then((json) => {
         // do something with JSON
         var entry = json.feed.entry;
-        var tr = "<tr>";
+        var tr='';
         $(entry).each(function(){
+          var sheet_date = this.gsx$date.$t.split("/");
+          var hasGray = false;
+          if(sheet_date.length>1){
+            var today = new Date();
+            var newDate = new Date(today.getFullYear(),sheet_date[1],sheet_date[0]);
+            hasGray = CompareDate(newDate);
+          }
+          tr += "<tr class="+(hasGray==true?'past-event':'')+">";
           if(this.gsx$date.$t != null || this.gsx$date.$t != "" || this.gsx$date.$t != "null"){ 
            if(this.gsx$city.$t != null || this.gsx$city.$t != "" || this.gsx$city.$t != "null"){
              if(this.gsx$state.$t != null || this.gsx$state.$t != "" || this.gsx$state.$t != "null"){
@@ -87,6 +112,6 @@ fetch(url, settings)
         $table.find('tbody').empty().append(tr);
       });
 
-})
+      })
 
 })();
