@@ -81,6 +81,7 @@
 	   margin: 18px 0;
 	  p{
 	    color:#fff;
+	    line-height: normal;
 	    font-weight: bold;
 	    letter-spacing: 0.5px;
 	    font-family: 'ITC Cheltenham', serif;
@@ -158,6 +159,9 @@ section#scheduale-location{
 		.location-detail{
             padding: 10px 0;
             table{
+			tr.past-event td {
+				color: gray !important;
+			}
             td:nth-child(1) {
 			    width: 15% !important;
 			}
