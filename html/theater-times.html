@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%= require('html-loader!./partials/head-tags.html') %>
+  </head>
+  <body class="tool">
+    <%= require('html-loader!./partials/nav.html') %>
+    <main class="main">
+      <div class="tool-column">
+        <h1 class="tool-title">Find Theater Times</h1>
+
+        <iframe src="https://app.powster.com/amazonstudios/all-in-the-fight-for-democracy/us/?iframe=true" frameborder="0" height="700px" width="850px" scrolling="yes"></iframe>
+      </div>
+    </main>
+    <%= require('html-loader!./partials/footer.html') %>
+  </body>
+</html>

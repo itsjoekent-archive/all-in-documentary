@@ -89,6 +89,10 @@ module.exports = {
       filename: 'mail-in-ballot.html',
     }),
     new HtmlWebpackPlugin({
+      template: 'html/theater-times.html',
+      filename: 'theater-times.html',
+    }),
+    new HtmlWebpackPlugin({
       template: 'html/new-page.html',
       filename: 'new-page.html',
     }),
