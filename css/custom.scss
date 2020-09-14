@@ -162,8 +162,11 @@ section#scheduale-location, section#about-artist-section{
 			tr.past-event td {
 				color: #808285 !important;
 			}
-            td:nth-child(1) {
-			    width: 15% !important;
+             td:nth-child(1) {	
+			    width: 10% !important;	
+			   @media screen and (max-width:768px){	
+			      width: 15% !important;	
+			   }	
 			}
 			td:nth-child(2) {
 			    width: 16% !important;
@@ -175,16 +178,21 @@ section#scheduale-location, section#about-artist-section{
 			    width: 10% !important;
 			}
 			td:nth-child(4) {
-			    width: 35% !important;
-			    @media screen and (max-width:768px){
-			     width:auto !important;
+			    width: 30% !important;	
+			    padding-right: 30px;
+			    @media screen and (max-width:768px){	
+			     width:auto !important;	
+			     padding-right: 0px;	
 			   }
 			}
 			td:nth-child(5) {
-			    width: 30% !important;
+			    width: 25% !important;	
+			    padding-left: 25px;
 			   @media screen and (max-width:768px){
-			     width:auto !important;
-			     text-align:left !important;
+			     width:auto !important;	
+			     text-align:left !important;	
+			     padding-left: 20px;	
+                 padding-right: 0;
 			   }
 			}
              width:100%;
@@ -198,10 +206,11 @@ section#scheduale-location, section#about-artist-section{
 				  width: 10%;
 				  color:#fff;
 				  font-family: MuseoSans,sans-serif;
-				  font-size:18px;
+				  font-size:16px;
 				  display:table-cell;
-				padding: 7px 0;
-				vertical-align: middle;
+				  padding: 7px 0;
+				  vertical-align: middle;
+				  line-height: 22px;
                 &:nth-of-type(5){
 				  width: 20%;
 	              text-align: right;
@@ -211,11 +220,11 @@ section#scheduale-location, section#about-artist-section{
                    font-size:16px;
 				}
 				@media screen and (max-width:798px){
-                   font-size:13px;
+                   font-size:12px;
                    text-align:left;
                    word-break: break-all;
-                   padding: 5px 6px;
-                   line-height: 18px;
+                   padding: 5px 2px;
+                   line-height: 16px;
 				}
 				@media screen and (max-width:360px){
 				  font-size:12px;
@@ -240,14 +249,44 @@ section#scheduale-location, section#about-artist-section{
 }
 /* Over-Scheduale-location-banner */
 
-/* instagram - section */
+	
+/* instagram - section */	
 .instagram-section{
-	display:none;
-	padding:120px 0 0 0;
-  @media screen and (max-width:768px){
-	  padding: 50px 0 0 0;
-  }
-}
+	display:none;	
+	padding:120px 0 0 0;	
+  @media screen and (max-width:768px){	
+	  padding: 50px 0 0 0;	
+  }	
+  .instagram-inner-section{	
+    display:inline-block;	
+    .instagram-img{	
+	    width: 30.80%;	
+	    float: left;	
+	    margin: 0 15px 30px;	
+	  img{	
+	    width:100%;	
+	  }	
+	  @media screen and (max-width:1190px){	
+	   width: 30.20%;	
+	  }	
+	  @media screen and (max-width:990px){	
+	    margin: 0 10px 20px;	
+	  }	
+	  @media screen and (max-width:768px){	
+	   width: 47%;	
+	  }	
+	  @media screen and (max-width:696px){	
+	   width: 100%;	
+	   margin:0 0 20px;	
+	  }	
+    }	
+     @media screen and (max-width:1190px){	
+        padding: 0 15px;	
+     }	
+  }	
+}	
+
+
 section#about-artist-section {
     padding-top: 160px;
     @media screen and (max-width:768px){
