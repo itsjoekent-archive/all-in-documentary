@@ -81,6 +81,7 @@
 	   margin: 18px 0;
 	  p{
 	    color:#fff;
+	    line-height: normal;
 	    font-weight: bold;
 	    letter-spacing: 0.5px;
 	    font-family: 'ITC Cheltenham', serif;
@@ -144,7 +145,7 @@
 
 /* Scheduale-location-banner */
 
-section#scheduale-location{
+section#scheduale-location, section#about-artist-section{
     padding: 115px 0 0 0;
 	.scheduale-location-content{
 		.scheduale-location-banner{
@@ -158,20 +159,41 @@ section#scheduale-location{
 		.location-detail{
             padding: 10px 0;
             table{
-            td:nth-child(1) {
-			    width: 15% !important;
+			tr.past-event td {
+				color: #808285 !important;
+			}
+             td:nth-child(1) {	
+			    width: 10% !important;	
+			   @media screen and (max-width:768px){	
+			      width: 15% !important;	
+			   }	
 			}
 			td:nth-child(2) {
-			    width: 10% !important;
+			    width: 16% !important;
+			    @media screen and (max-width:768px){
+			     width:auto !important;
+			   }
 			}
 			td:nth-child(3) {
 			    width: 10% !important;
 			}
 			td:nth-child(4) {
-			    width: 35% !important;
+			    width: 30% !important;	
+			    padding-right: 30px;
+			    @media screen and (max-width:768px){	
+			     width:auto !important;	
+			     padding-right: 0px;	
+			   }
 			}
 			td:nth-child(5) {
-			    width: 30% !important;
+			    width: 25% !important;	
+			    padding-left: 25px;
+			   @media screen and (max-width:768px){
+			     width:auto !important;	
+			     text-align:left !important;	
+			     padding-left: 20px;	
+                 padding-right: 0;
+			   }
 			}
              width:100%;
              table-layout: fixed;
@@ -184,22 +206,31 @@ section#scheduale-location{
 				  width: 10%;
 				  color:#fff;
 				  font-family: MuseoSans,sans-serif;
-				  font-size:18px;
+				  font-size:16px;
 				  display:table-cell;
-				padding: 7px 0;
-				vertical-align: middle;
+				  padding: 15px 0;
+				  vertical-align: middle;
+				  line-height: 22px;
                 &:nth-of-type(5){
 				  width: 20%;
 	              text-align: right;
+	              text-transform: uppercase;
 				}
 				@media screen and (max-width:1200px){
                    font-size:16px;
 				}
+				@media screen and (max-width:798px){
+                   font-size:12px;
+                   text-align:left;
+                   word-break: break-all;
+                   padding: 5px 2px;
+                   line-height: 16px;
 				}
-			   }
-			   @media screen and (max-width:767px){
-			     width:800px;
-			     overflow-x: scroll;
+				@media screen and (max-width:360px){
+				  font-size:12px;
+				  padding: 5px 4px;
+				}
+				}
 			   }
 			 }
 			@media screen and (max-width:767px){
@@ -218,14 +249,49 @@ section#scheduale-location{
 }
 /* Over-Scheduale-location-banner */
 
-/* instagram - section */
+	
+/* instagram - section */	
 .instagram-section{
-	padding:120px 0 0 0;
-  @media screen and (max-width:768px){
-	  padding: 50px 0 0 0;
-  }
-}
+	padding:120px 0 0 0;	
+  @media screen and (max-width:768px){	
+	  padding: 50px 0 0 0;	
+  }	
+  .instagram-inner-section{	
+    display:inline-block;	
+    .instagram-img{	
+	    width: 30.80%;	
+	    float: left;	
+	    margin: 0 15px 30px;	
+	  img{	
+	    width:100%;	
+	  }	
+	  @media screen and (max-width:1190px){	
+	   width: 30.20%;	
+	  }	
+	  @media screen and (max-width:990px){	
+	    margin: 0 10px 20px;	
+	  }	
+	  @media screen and (max-width:768px){	
+	   width: 47%;	
+	  }	
+	  @media screen and (max-width:696px){	
+	   width: 100%;	
+	   margin:0 0 20px;	
+	  }	
+    }	
+     @media screen and (max-width:1190px){	
+        padding: 0 15px;	
+     }	
+  }	
+}	
 
+
+section#about-artist-section {
+    padding-top: 160px;
+    @media screen and (max-width:768px){
+    	padding-top: 80px;
+    }
+}
 
 .about-artist-section{
 	.about-artist-content{
@@ -286,7 +352,7 @@ section#scheduale-location{
 	padding: 115px 0 0 0;
   .faq-section-content{
    text-align:center;
-   padding-bottom:50px;
+   padding-bottom:125px;
     strong,p{
       color:#fff;
       font-family: MuseoSans,sans-serif;
@@ -308,7 +374,7 @@ section#scheduale-location{
       line-height:26px;
     }
     @media screen and (max-width:768px){
-       padding-bottom: 10px;
+       padding-bottom: 125px;
     }
   }
   @media screen and (max-width:768px){
